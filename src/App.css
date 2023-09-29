@@ -1,38 +1,206 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+Card{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  border: 1px solid black;
+  background-color: red;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/*.design h6{
+  font-family: garamond;
+  font-size: 105px;
+}*/
+*{
+  margin: 0;
+  padding: 0;
+}
+.home{
+  background: url('./Images/chair4.JPEG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 675px;
+  background-position: center;
+}
+.design{
+  padding: 20px;
+  width: auto;
   color: white;
 }
+.design h6{
+  font-family: garamond;
+  font-size: 105px;
+  margin-top: 80px;
+  margin-left: 20px;
+}
+.design .content{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 55px;
+  margin-left: 30px;
+}
+.design p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin-left: 30px;
+}
+.design button{
+  padding: 10px 30px 10px 30px;
+  margin-top: 20px ;
+  border-radius: 20px;
+  margin-left: 30px;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  border: none;
+}
+.design button:hover{
+  background-color: white;
+  color: black;
+}
+.detail{
+	margin: 20px;
+	width: auto;
+	display: flex;
+	padding: 20px;
 
-.App-link {
-  color: #61dafb;
+}
+.para{
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 18px;
+	text-align: justify;
+	padding-left: 20px;
+}
+.contact{
+  margin: 20px;
+  border: 1px ;
+  padding: 20px;
+}
+.form{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+  width: auto;
+  margin-top: 30px;
+}
+.form h2 {
+text-align: center;
+justify-content: center;
+}
+.form input{
+  padding: 10px 100px 10px 100px;
+  margin-top: 10px;
+
+}
+.form label{
+  margin-top: 20px;
+}
+.form textarea{
+  height: 100px;
+}
+.form button{
+  padding: 10px 30px 10px 30px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+}
+.form button:hover{
+  background-color: orange;
+}
+@media only screen and (max-width: 1024px){
+  .design{
+    width: auto;
+  }
+  .design h6{
+    font-family: garamond;
+    font-size: 85px;
+    margin-top: 60px;
+    margin-left: 20px;
+  }
+  .design .content{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    margin-left: 20px;
+  }
+  .design p{
+    margin-left: 10px;
+  }
+}
+  @media only screen and (max-width: 900px){
+    
+    .design{
+      width: auto;
+    }
+    .design h6{
+      font-family: garamond;
+      font-size: 85px;
+      margin-top: 60px;
+      margin-left: 20px;
+    }
+    .design .content{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 35px;
+      margin-left: 30px;
+    }
+    .design p{
+      margin-left: 30px;
+    }
+  .detail{
+    margin: 20px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    padding: 20px;
+  
+  }
+  .detail img{
+    margin-left: 40px;
+  }
+}
+@media only screen and (max-width: 600px){
+  .design{
+    width: auto;
+  }
+  .design h6{
+    font-family: garamond;
+    font-size: 65px;
+    margin-top: 80px;
+    margin-left: 10px;
+  }
+  .design .content{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    margin-left: 10px;
+  }
+  .design p{
+    margin-left: 10px;
+  }
+  .detail{
+    margin: 20px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    padding: 20px;
+  
+  }
+  .detail img{
+    margin-left: 40px;
+  }
+  .para{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-align: justify;
+    padding-left: 20px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
